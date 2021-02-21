@@ -5,7 +5,7 @@
 * 何をどう変更したのか  
 講義 section04/step03・04 で作成した gacha パッケージ(https://github.com/gohandson/gacha-ja/tree/main/skeleton/section04/step03)  
 に対し、以下の変更を加えました。
-  * ガチャの各レア度( N, R, SR, XR )に対し、選ばれるモンスターの数を増やしました。
+  * ガチャの各レア度( N, R, SR, XR )に対し、ランダムに選ばれるモンスターの数を増やしました。
 
 * なぜそのバージョンの付け方をしたのか  
 講義で作成した gacha パッケージのバージョンは `v0.0.1` でした。  
