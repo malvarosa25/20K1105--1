@@ -1,7 +1,6 @@
 package gacha
 
 import (
-	"fmt"
 	"math/rand"
 	"time"
 )
@@ -28,12 +27,10 @@ func DrawN(p *Player, n int) ([]*Card, map[Rarity]int) {
 
 func draw() *Card {
 	num := rand.Intn(100)
-	fmt.Println(num)
 	switch {
 	case num < 80: // num の値により、Rarity を分ける
 		num = rand.Intn(100) // 再度 num の値を乱数で決め代入する
-		fmt.Println(num)
-		switch { // 新しい num の値により、モンスターの種類を決める
+		switch {             // 新しい num の値により、モンスターの種類を決める
 		case num < 25:
 			return &Card{Rarity: RarityN, Name: "スライム"}
 		case num < 50:
