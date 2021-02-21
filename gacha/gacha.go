@@ -68,9 +68,9 @@ func draw() *Card {
 		case num < 25:
 			return &Card{Rarity: RarityXR, Name: "イフリート"}
 		case num < 50:
-			return &Card{Rarity: RarityN, Name: "妖女イシュダル"}
+			return &Card{Rarity: RarityXR, Name: "妖女イシュダル"}
 		case num < 75:
-			return &Card{Rarity: RarityN, Name: "はぐれメタル"}
+			return &Card{Rarity: RarityXR, Name: "はぐれメタル"}
 		default:
 			return &Card{Rarity: RarityXR, Name: "サンディ"}
 		}
